@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroung_color"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.ReactionSettingActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:text="@string/reaction_setting"
+        style="@style/setting_title"/>
+
+    <TextView
+        style="@style/setting_edittext_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/preparation_time" />
+
+    <Spinner
+        android:id="@+id/spinner_preparationTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/back_edittext"
+        tools:listitem="@layout/spinner_item" />
+
+    <TextView
+        style="@style/setting_edittext_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/number_of_rounds" />
+
+    <Spinner
+        android:id="@+id/spinner_noOfRounds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/back_edittext"
+        tools:listitem="@layout/spinner_item" />
+
+    <TextView
+        style="@style/setting_edittext_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/number_of_hits" />
+
+    <Spinner
+        android:id="@+id/spinner_noOfHits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/back_edittext"
+        tools:listitem="@layout/spinner_item" />
+
+    <TextView
+        style="@style/setting_edittext_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/time_penalty_value" />
+
+    <EditText
+        android:id="@+id/et_time_penalty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_semi_bold"
+        android:padding="10dp"
+        android:text="1"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:inputType="numberDecimal"
+        android:background="@drawable/back_edittext" />
+
+    <TextView
+        style="@style/setting_edittext_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/detection_zone" />
+
+    <RadioGroup
+        android:id="@+id/rg_detectionZone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_wideDetectionZone"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/wide_detection_zone" />
+
+        <RadioButton
+            android:id="@+id/rb_narrowDetectionZone"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="@string/narrow_detection_zone" />
+    </RadioGroup>
+
+</LinearLayout>

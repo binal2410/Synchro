@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroung_color"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.SelectedTargetSwitching">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollIndicators="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/setting_title"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:text="@string/zeroing_setting" />
+
+
+            <TextView
+                style="@style/setting_edittext_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/width_real_life" />
+
+            <EditText
+                android:id="@+id/et_width"
+                style="@style/setting_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned|numberDecimal"
+                android:text="0" />
+
+            <TextView
+                style="@style/setting_edittext_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/height_real_life" />
+
+            <EditText
+                android:id="@+id/et_height"
+                style="@style/setting_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned|numberDecimal"
+                android:text="0" />
+
+            <TextView
+                style="@style/setting_edittext_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/horizontal_offcet" />
+
+            <EditText
+                android:id="@+id/et_hOffcet"
+                style="@style/setting_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned|numberDecimal"
+                android:text="1" />
+
+            <TextView
+                style="@style/setting_edittext_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/vertical_offcet" />
+
+            <EditText
+                android:id="@+id/et_vOffcet"
+                style="@style/setting_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned|numberDecimal"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/tv_set"
+                style="@style/setting_btn"
+                android:layout_width="@dimen/setting_btn_width"
+                android:layout_height="@dimen/setting_btn_height"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/set" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

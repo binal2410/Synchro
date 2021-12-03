@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroung_color"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    tools:context=".activity.SoftwareVersionActivity">
+
+    <TextView
+        style="@style/setting_title"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:text="@string/software_version" />
+
+    <TextView
+        style="@style/setting_edittext_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/app_version" />
+
+    <TextView
+        android:id="@+id/tv_appVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="1.0.0"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/device_software_version"
+        style="@style/setting_edittext_title" />
+
+    <TextView
+        android:id="@+id/tv_deviceSoftwareVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="-"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/setting_edittext_title"
+        android:text="@string/device_serial_number" />
+
+    <TextView
+        android:id="@+id/tv_deviceSerialNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="-"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+</LinearLayout>

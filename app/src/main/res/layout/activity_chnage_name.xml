@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroung_color"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".activity.ChnageNameActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:text="@string/change_name"
+        style="@style/setting_title"/>
+
+
+    <TextView
+        style="@style/setting_edittext_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/device_new_name" />
+
+
+    <EditText
+        android:id="@+id/et_newName"
+        style="@style/setting_edittext"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_change"
+        style="@style/setting_btn"
+        android:layout_width="@dimen/setting_btn_width"
+        android:layout_height="@dimen/setting_btn_height"
+        android:text="@string/change" />
+
+</LinearLayout>

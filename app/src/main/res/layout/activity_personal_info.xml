@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroung_color"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".activity.PersonalInfoActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/setting_title"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:text="@string/personal_info" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_save"
+        android:layout_below="@+id/tvTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/setting_edittext_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/full_name" />
+
+
+            <EditText
+                android:id="@+id/et_fullname"
+                style="@style/setting_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+
+            <TextView
+                style="@style/setting_edittext_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/id" />
+
+
+            <EditText
+                android:id="@+id/et_id"
+                style="@style/setting_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/setting_edittext_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/unit" />
+
+
+            <EditText
+                android:id="@+id/et_unit"
+                style="@style/setting_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/setting_edittext_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sub_unit" />
+
+
+            <EditText
+                android:id="@+id/et_sub_unit"
+                style="@style/setting_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/setting_edittext_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/company" />
+
+
+            <EditText
+                android:id="@+id/et_company"
+                style="@style/setting_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+
+            <TextView
+                style="@style/setting_edittext_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/platoon" />
+
+
+            <EditText
+                android:id="@+id/et_platoon"
+                style="@style/setting_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/tv_save"
+        style="@style/setting_btn"
+        android:layout_width="@dimen/setting_btn_width"
+        android:layout_height="@dimen/setting_btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/str_save" />
+
+</RelativeLayout>

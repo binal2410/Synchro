@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_size">20sp</dimen>
+    <dimen name="scan_size">16sp</dimen>
+    <dimen name="setting_btn_width">120dp</dimen>
+    <dimen name="setting_btn_height">40dp</dimen>
+</resources>

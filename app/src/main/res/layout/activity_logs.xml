@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroung_color"
+    tools:context=".activity.LogsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:textSize="@dimen/title_size"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/logs"
+        android:textColor="@color/title_color"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_clear"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:textSize="@dimen/scan_size"
+        android:fontFamily="@font/open_sans_regular"
+        android:text="@string/clear"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/back_scan_btn"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="end"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_logs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_marginTop="15dp"/>
+</LinearLayout>

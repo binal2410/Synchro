@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroung_color"
+    android:orientation="vertical"
+    tools:context=".activity.MarkerSizeActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroung_color"
+    android:orientation="vertical"
+    tools:context=".activity.MarkerSizeActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:fontFamily="@font/open_sans_bold"
+        android:gravity="center"
+        android:text="@string/marker_color"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/title_size" />
+
+    <RadioGroup
+        android:id="@+id/rg_marker_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_red"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/red" />
+
+        <RadioButton
+            android:id="@+id/rb_yellow"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="@string/yellow" />
+
+        <RadioButton
+            android:id="@+id/rb_blue"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="@string/blue" />
+
+        <RadioButton
+            android:id="@+id/rb_green"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="@string/green" />
+
+        <RadioButton
+            android:id="@+id/rb_pink"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="@string/pink" />
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:fontFamily="@font/open_sans_bold"
+        android:gravity="center"
+        android:text="@string/marker_size"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/title_size" />
+
+    <RadioGroup
+        android:id="@+id/rg_marker_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_twelve"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="12" />
+
+        <RadioButton
+            android:id="@+id/rb_ten"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:checked="false"
+            android:text="10" />
+
+        <RadioButton
+            android:id="@+id/rb_eight"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="8" />
+
+        <RadioButton
+            android:id="@+id/rb_six"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="6" />
+
+        <RadioButton
+            android:id="@+id/rb_four"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:checked="true"
+            android:text="4" />
+        <RadioButton
+            android:id="@+id/rb_two"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="2" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:fontFamily="@font/open_sans_bold"
+        android:gravity="center"
+        android:text="@string/marker_shape"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/title_size" />
+
+    <RadioGroup
+        android:id="@+id/rg_marker_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_circle"
+            style="@style/setting_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/circle" />
+
+        <RadioButton
+            android:id="@+id/rb_rectangle"
+            style="@style/setting_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="@string/rectangle" />
+
+        <RadioButton
+            android:id="@+id/rb_pentagon"
+            style="@style/setting_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="@string/pentagon" />
+
+        <RadioButton
+            android:id="@+id/rb_oval"
+            style="@style/setting_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="@string/oval" />
+
+        <RadioButton
+            android:id="@+id/rb_star"
+            style="@style/setting_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="@string/star" />
+    </RadioGroup>
+
+</LinearLayout>
+</ScrollView>

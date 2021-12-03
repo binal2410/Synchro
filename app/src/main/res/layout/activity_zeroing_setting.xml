@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroung_color"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.ZeroingSettingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollIndicators="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/setting_title"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:text="@string/zeroing_setting" />
+
+
+            <TextView
+                android:id="@+id/tvGoalX"
+                style="@style/setting_edittext_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/goal_x" />
+
+            <EditText
+                android:id="@+id/et_goalx"
+                style="@style/setting_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned|numberDecimal"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tvGoalY"
+                style="@style/setting_edittext_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/goal_y" />
+
+            <EditText
+                android:id="@+id/et_goaly"
+                style="@style/setting_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned|numberDecimal"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tvClickToX"
+                style="@style/setting_edittext_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cali_x" />
+
+            <EditText
+                android:id="@+id/et_calix"
+                style="@style/setting_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned|numberDecimal"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/tvClickToY"
+                style="@style/setting_edittext_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cali_y" />
+
+            <EditText
+                android:id="@+id/et_caliy"
+                style="@style/setting_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned|numberDecimal"
+                android:text="1" />
+
+            <TextView
+                style="@style/setting_edittext_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mode_setting" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_indicativeMode"
+                    style="@style/setting_radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/indicative_mode" />
+
+                <RadioButton
+                    android:id="@+id/rb_darkmode"
+                    style="@style/setting_radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:text="@string/dark_mode" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/setting_edittext_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detection_zone" />
+
+            <RadioGroup
+                android:id="@+id/rg_detectionZone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_wideDetectionZone"
+                    style="@style/setting_radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/wide_detection_zone" />
+
+                <RadioButton
+                    android:id="@+id/rb_narrowDetectionZone"
+                    style="@style/setting_radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:text="@string/narrow_detection_zone" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_set"
+                style="@style/setting_btn"
+                android:layout_width="@dimen/setting_btn_width"
+                android:layout_height="@dimen/setting_btn_height"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/set" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

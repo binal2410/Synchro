@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/back_footer"
+    android:paddingTop="13dp"
+    android:weightSum="3">
+
+    <TextView
+        android:id="@+id/tv_footer_connect"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/connect"
+        android:gravity="center"
+        android:textColor="@color/connect_btn_color"
+        android:drawableTop="@drawable/connect_active"
+        android:textSize="12sp"
+        android:fontFamily="@font/open_sans_bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_footer_tarin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/train"
+        android:gravity="center"
+        android:textColor="@color/connect_btn_color"
+        android:drawableTop="@drawable/train_active"
+        android:textSize="12sp"
+        android:fontFamily="@font/open_sans_bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_footer_setting"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/setting"
+        android:gravity="center"
+        android:textColor="@color/connect_btn_color"
+        android:drawableTop="@drawable/log_active"
+        android:textSize="12sp"
+        android:fontFamily="@font/open_sans_bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"/>
+
+
+</LinearLayout>

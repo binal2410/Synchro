@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroung_color"
+    android:orientation="vertical"
+    tools:context=".activity.MarkerColorActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:fontFamily="@font/open_sans_bold"
+        android:gravity="center"
+        android:text="@string/marker_color"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/title_size" />
+
+    <RadioGroup
+        android:id="@+id/rg_marker_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_red"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/red" />
+
+        <RadioButton
+            android:id="@+id/rb_yellow"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="@string/yellow" />
+
+        <RadioButton
+            android:id="@+id/rb_blue"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="@string/blue" />
+
+        <RadioButton
+            android:id="@+id/rb_green"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="@string/green" />
+
+        <RadioButton
+            android:id="@+id/rb_pink"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="@string/pink" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroung_color"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    tools:context=".activity.FreeStyleSettingActivity">
+
+    <TextView
+        style="@style/setting_title"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:text="@string/freestyle_setting" />
+
+    <TextView
+        style="@style/setting_edittext_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/mode_setting" />
+
+    <RadioGroup
+        android:id="@+id/rg_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_indicativeMode"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/indicative_mode" />
+
+        <RadioButton
+            android:id="@+id/rb_darkmode"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="@string/dark_mode" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_report"
+        style="@style/setting_edittext_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/report_setting" />
+
+    <RadioGroup
+        android:id="@+id/rg_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_report_afterHit"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/report_after_each_hit" />
+
+        <RadioButton
+            android:id="@+id/rb_reportStopped"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="@string/report_when_stopped" />
+    </RadioGroup>
+
+    <TextView
+        style="@style/setting_edittext_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/detection_zone" />
+
+    <RadioGroup
+        android:id="@+id/rg_detectionZone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_wideDetectionZone"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/wide_detection_zone" />
+
+        <RadioButton
+            android:id="@+id/rb_narrowDetectionZone"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="@string/narrow_detection_zone" />
+    </RadioGroup>
+
+    <TextView
+        style="@style/setting_edittext_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/display_target_velocity" />
+
+    <RadioGroup
+        android:id="@+id/rg_velocity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_velocity_on"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/on" />
+
+        <RadioButton
+            android:id="@+id/rb_velocity_off"
+            style="@style/setting_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:checked="true"
+            android:text="@string/off" />
+    </RadioGroup>
+
+
+</LinearLayout>
